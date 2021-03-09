@@ -7,7 +7,7 @@
   --clr-primary-text: white;
   --clr-accent: #550086;
   --clr-accent-text: #white;
-  --clr-accent-text-shadow: #333;
+  --clr-accent-text-shadow: #666;
   --clr-bg: linear-gradient(135deg, #fffedf, #fffdf1, #fffedf);
   --clr-bg: linear-gradient(135deg, #ffe0ff, #fffdff, #ffe0ff);
   --clr-bullet: #884d00;
@@ -15,7 +15,9 @@
   --fs-400: 1em;
   --fs-500: 1.3em;
   --fs-600: 1.6em;
-  --fs-700: 2.4em;
+  --fs-700: 1.8em;
+  --fs-800: 2em;
+  --fs-900: 2.4em;
   --ff-main: Arial, Helvetica, sans-serif;
   --ff-main: 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
   --ff-title: Maitree, Georgia, 'Times New Roman', Times, serif;
@@ -28,7 +30,7 @@
   --width-border: 0.15em;
   --width-image-border: 0.5em;
   --min-logo-title-width: 14rem;
-  --max-logo-title-width: 50rem;
+  --max-logo-title-width: 45rem;
   --box-shadow-h-offset: 0.25em;
   --box-shadow-v-offset: 0.25em;
   --box-shadow-spread: 0.5em;
@@ -186,7 +188,7 @@ b {
 }
 
 .title-page__header {
-  margin-bottom: var(--spacer);
+  margin-bottom: calc(var(--spacer) * 2);
 }
 
 .title-page__logo {
@@ -203,22 +205,30 @@ b {
   color: var(--clr-primary);
   font-size: var(--fs-600);
   font-style: italic;
-  margin-bottom: var(--padding-bg);
 }
 
 .title-page__title {
-  font-size: var(--fs-700);
+  font-size: var(--fs-900);
   color: var(--clr-accent);
   text-shadow: 0.025em 0.025em var(--clr-accent-text-shadow);
+  text-decoration: underline;
+  text-transform: uppercase;
   line-height: 1.2;
   margin-bottom: var(--padding-bg);
 }
 
 .title-page__subtitle {
   color: var(--clr-primary);
-  font-size: var(--fs-600);
   font-style: italic;
   margin-bottom: var(--padding-bg);
+}
+
+.title-page__subtitle > * {
+  font-size: var(--fs-700);
+}
+
+.title-page__subtitle [small] {
+  font-size: var(--fs-700);
 }
 
 .title-page__date {
