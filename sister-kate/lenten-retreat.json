@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "Music Video",
-    "current_scene": "Music Video",
+    "current_program_scene": "Welcome",
+    "current_scene": "Title",
     "current_transition": "Luma Wipe",
     "groups": [
         {
@@ -231,6 +231,9 @@
             "name": "Title"
         },
         {
+            "name": "Welcome"
+        },
+        {
             "name": "Video and Audio"
         },
         {
@@ -393,7 +396,7 @@
                 "css": "",
                 "height": 1080,
                 "is_local_file": true,
-                "local_file": "C:/git/lenten-retreat/deacon-dave/title.html",
+                "local_file": "C:/git/lenten-retreat/sister-kate/title.html",
                 "restart_when_active": true,
                 "width": 1920
             },
@@ -701,9 +704,104 @@
             "settings": {
                 "css": "",
                 "height": 1080,
-                "reroute_audio": false,
+                "reroute_audio": true,
                 "restart_when_active": false,
                 "url": "https://www.youtube.com/watch?v=vCqyvwr3QxA&list=PLyHuHdXw7CfYExcV8rg5o_4M3sluQfyO1&index=2&ab_channel=SisselKyrkjeb%C3%B8",
+                "width": 1920
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Welcome Web": [],
+                "libobs.show_scene_item.Welcome Web": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Welcome",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 1,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Welcome Web",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Welcome Web",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "height": 1080,
+                "reroute_audio": true,
+                "url": "https://youtu.be/d4-jWaBJh5w",
                 "width": 1920
             },
             "sync": 0,
